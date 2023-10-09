@@ -38,7 +38,6 @@ function obtenerResto(x, y) {
    // Tu código:
    return x%y
 }
-
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    devolverString,
