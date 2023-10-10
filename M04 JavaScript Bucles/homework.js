@@ -107,8 +107,9 @@ function operadoresLogicos(num1, num2, num3) {
    // Tu código:
    if (num1 > num2 && num1 > num3 && num1 > 0) return "Numero 1 es mayor y positivo";
    if (num1 < 0 || num2 < 0 || num3 < 0) return "Hay negativos";
-   if (num3>num1 & num3>2) return ++ num3
-   else (num1=0 && num2 = 0 && num3 = 0  ) return "error";
+   if (num3>num1 && num3>2) return ++num3
+   else if (num1=== 0 && num2 === 0 && num3 === 0 ) return "error"
+   return false
 }
 
 
@@ -119,18 +120,27 @@ function esPrimo(num) {
    // [Pista 2]: puedes resolverlo utilizando un `bucle for`.
    // [Nota]: los números negativos, 0 y 1 NO son números primos.
    // Tu código:
+   if (num< 2)return false
+   for (var i = 2;i<num ; i++){
+   if (num%i===0) return false
+   }
+   return true
+
 }
 
 function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
+   if (valor===true) return "Soy verdadero"
+   else if (valor===false)return "Soy falso"
 }
-
 function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar true.
    // Caso contrario, retornar false.
    // Tu código:
+   if(num>99 &&num<1000) return true
+   return false
 }
 
 function doWhile(num) {
@@ -138,8 +148,14 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
-}
+   var contador = 0
+   do {
+      num = num + 5
+   contador+1
+} while(contador<8)
+return num
 
+}
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    obtenerMayor,
