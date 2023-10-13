@@ -25,11 +25,12 @@ function incrementarPorUno(array) {
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
    var masUno = []
-   for(var i = 0; i < array.length; i++) {
-   masUno[i] = array[i] + 1
+   for(var i = 0; i < array.length; i++)
+   {masUno[i] = array[i] + 1;}
    return masUno
-   }
+
 }
+
 
 function agregarItemAlFinalDelArray(array, elemento) {
    // Agrega el "elemento" al final del arreglo recibido.
@@ -223,6 +224,7 @@ function continueStatement(num) {
       array.push(suma);}}
    return array 
 }
+
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    devolverPrimerElemento,
